@@ -1,0 +1,1149 @@
+body {
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Meiryo,"メイリオ", Helvetica,Sans-Serif;
+    color: #2b3f43;
+    letter-spacing: .03em;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    text-align: left;
+}
+
+a {
+    color: #5fb2c1;
+}
+
+.h1,h2,h3,h4 {
+    font-weight: normal;
+}
+
+.h1 {
+    font-size: 40px;
+}
+
+
+/* ここからheaderエリアになります */
+
+
+.header {
+	position: relative;
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+}
+
+.video {
+    background: url('../images/video.png') no-repeat;
+	position: relative;
+    min-width: 100%;
+	min-height: 600px;
+	width: auto;
+	height: 600px;
+	top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    zoom: 1.2;
+    z-index: -100;
+    background-position: center;
+	background-size: cover;
+}
+
+.h-contents {
+    width: 800px;
+    padding: 0 50px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+}
+
+.h-contents .contents-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.svg-box a {
+    color: transparent;
+}
+
+.h-contents svg {
+    width: 200px;
+    height: 50px;
+    fill: #6fc173;
+}
+
+.contents-box .link-box a {
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid #fff;
+    line-height: 56px;
+}
+
+.contents-box .svg-box, .contents-box .link-box {
+    padding: 0 15px;
+}
+
+.h-contents .h1 {
+    margin: 60px 0 40px 0;
+}
+
+.h-contents p {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.h-contents .big{
+    font-size: 24px;
+}
+
+.btn-box {
+    position: relative;
+    margin-top: 40px;
+}
+
+.btn {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    padding: 10px 45px;
+    color: #fff;
+    background: #6fc173;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 3px solid rgb(78, 136, 78);
+    vertical-align: bottom;
+}
+
+.btn:hover {
+    border: none;
+    position: absolute;
+    top: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* ここからmainエリアになります */
+
+
+.main {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.section .sec-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ここからmainエリアになります */
+
+
+#section1 {
+    width: 800px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+#section1 .h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#section1 p {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#section1 .sec-container {
+    justify-content: space-between;
+}
+
+#section1 .sec-box {
+    width: 240px;
+}
+
+#section1 .img {
+    border-radius: 5px;
+}
+
+#section1 .h2 {
+    margin: 10px 0;
+}
+
+#section1 .sec-box p {
+    text-align: left;
+}
+
+#section2 {
+    height: 670px;
+    color: #fff;
+    overflow: hidden;
+}
+
+#section2 .back-image {
+    background-image: url(../images/ban.jpg);
+    height: 670px;
+    padding-top: 60px;
+    background-position: center;
+    background-size: cover;
+}
+
+#section2 h1 {
+    width: 800px;
+    margin: 0 auto 30px;
+}
+
+#section2 p {
+    width: 800px;
+    margin: 0 auto 25px;
+}
+
+#section3 {
+    margin-top: 60px;
+}
+
+#section3 h1 {
+    margin: 0 auto 30px;
+}
+
+#section3 > p {
+    width: 800px;
+    margin: 0 auto 25px;
+}
+
+#section3 .sec-container {
+    margin: 0 auto;
+    width: 800px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#section3 .sec-box {
+    width: 384px;
+    height: auto;
+}
+
+#section3 .svg {
+    float: left;
+}
+
+#section3 .text-box {
+    float: right;
+    width: 270px;
+    height: auto;
+}
+
+#section3 .h3 {
+    margin: 0;
+    text-align: left;
+}
+
+#section3 .text-box p {
+    margin: 0 0 25px;
+}
+
+#section3 .table-box {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#section3 .table-box:nth-child(even) {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#section3 table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+#section3 tr:nth-child(even) {
+    background-color: #f8f7f2;
+}
+
+#section3 th, #section3 td {
+    border: 1px solid #e5e5d1;
+}
+
+#table1 th {
+    vertical-align: top;
+    padding: 10px;
+    width: 60px;
+}
+
+#table1 td {
+    padding: 10px;
+}
+
+#table2 th, #table2 td {
+    width: calc(800px / 7);
+    padding: 10px;
+    text-align: center;
+}
+
+.table-tag {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    margin: 10px 0;
+}
+
+#section3 .setumei {
+    width: 800px;
+    height: 270px;
+    margin: 0 auto;
+}
+
+#section3 .setumei-box{
+    width: 570px;
+    float: right;
+}
+
+#section4 {
+    height: 360px;
+    overflow: hidden;
+    position: relative;
+    clear: both;
+    color: #fff;
+    margin-top: 70px;
+}
+
+#section4 .back-image {
+    background-image: url(../images/ban.jpg);
+    height: 360px;
+    padding-top: 60px;
+    background-position: center;
+    background-size: cover;
+}
+
+#section4 h1 {
+    width: 800px;
+    margin: 0 auto 30px;
+}
+
+#section4 p {
+    width: 800px;
+    margin: 0 auto 25px;
+}
+
+#section5 .h1 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+#section5 .sec-container {
+    width: 800px;
+    margin: 0 auto 40px;
+}
+
+#section5 .img-box {
+    width: 142px;
+    height: 142px;
+    overflow: hidden;
+}
+
+#section5 .img {
+    width: auto;
+    height: 142px;
+    border-radius: 50%;
+}
+
+.name {
+    display: block;
+}
+
+#section5 .text-box {
+    padding: 30px 30px 5px;
+    width: 550px;
+    height: auto;
+    background: #f8f7f2;
+    border-radius: 5px;
+    position: relative;
+}
+
+#section5 .text-box::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    left: -15px;
+    top: 30px;
+    border-right: 15px solid #f8f7f2;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+#section6 {
+    margin-top: 100px;
+    background: #f8f7f2;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+#section6 .h1 {
+}
+
+#section6 p {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#section6 .sec-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#section6 .sec-box {
+    margin: 0 10px;
+}
+
+#section6 .img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#section6 .name {
+    font-size: 24px;
+    height: 80px;
+}
+
+#section6 .sec-box p {
+    text-align: left;
+}
+
+#section7 {
+    margin-top: 60px;
+}
+
+#section7 .h1 {
+}
+
+#section7 .sec-container {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#section7 .sec-box {
+    width: 384px;
+}
+
+.num {
+    border-radius: 50%;
+    font-size: 18px;
+    background: #5fb2c1;
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    float: left;
+}
+
+#section7 .text-box {
+    float: right;
+    width: 324px;
+    height: 146px;
+    text-align: left;
+}
+
+#section7 .h2, #section7 .text-box p {
+    margin: 0;
+}
+
+#section7 .small {
+    font-size: 12px;
+    clear: both;
+    display: block;
+    width: 800px;
+    margin: 70px auto 0;
+}
+
+#section8 {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    clear: both;
+    color: #fff;
+    margin-top: 70px;
+}
+
+#section8 .back-image {
+    background-image: url(../images/ban.jpg);
+    height: 240px;
+    padding-top: 60px;
+    background-position: center;
+    background-size: cover;
+}
+
+#section8 h1 {
+    width: 800px;
+    margin: 0 auto 30px;
+}
+
+#section8 p {
+    width: 800px;
+    margin: 0 auto 25px;
+}
+
+#section9 {
+    margin-top: 60px;
+    text-align: left;
+}
+
+#section9 .h1 {
+    width: 800px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+#section9 .audio {
+    display: block;
+    width: 800px;
+    margin: 0 auto 40px;
+}
+
+#section9 .text-box {
+    width: 800px;
+    margin: 0 auto 50px;
+}
+
+#section10 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #f8f7f2;
+
+}
+
+#section10 .h1 {
+    margin: 0 auto 30px ;
+}
+
+#section10 .sec-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#section10 .sec-box {
+    width: 220px;
+}
+
+#section10 .small {
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    width: 800px;
+    margin: 20px auto 0;
+}
+
+#section10 table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+#section10 td {
+    border: 1px solid #e5e5d1;
+}
+
+#section10 td {
+    text-align: center;
+    padding: 10px;
+}
+
+#section10 .green {
+    background: #6fc173;
+    color: #f8f7f2;
+}
+
+#section10 .white {
+    background: #fff;
+}
+
+#section10 table .price {
+    font-size: 40px;
+}
+
+#section10 .not-work {
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+#section11 {
+    margin-top: 60px;
+    padding-bottom: 50px;
+}
+
+#section11 .text-box {
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#section11 .text-box .h2 {
+    margin: 0;
+}
+
+#section11 .text-box p {
+    margin: 0 0 25px;
+}
+
+#section12 {
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 120px;
+    background: #f8f7f2;
+    height: 100%;
+}
+
+#section12 .h1 {
+    margin: 0 auto 30px;
+}
+
+#section12 p {
+    width: 800px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+#section12 .form {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#section12 .form span {
+    display: block;
+}
+
+#section12 .input-box {
+    position: relative;
+}
+
+#section12 .input {
+    width: 380px;
+    height: 26px;
+    margin-bottom: 25px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 1px solid #e5e5d1;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+#section12 .select {
+    width: 400px;
+    height: 40px;
+    margin-bottom: 25px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 1px solid #e5e5d1;
+    background: #fff;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+#section12 .input-box i {
+    position: absolute;
+    zoom: 1.5;
+    top: 24px;
+    right: 140px;
+    cursor: pointer;
+}
+
+#section12 .small {
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    width: 800px;
+    margin: -20px auto 25px;
+}
+
+#section12 .textarea {
+    width: 680px;
+    height: 186px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 1px solid #e5e5d1;
+    background: #fff;
+    font-size: 1rem;
+}
+
+.footer {
+    background: #2b3f43;
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer .f-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .f-container a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    color: #5fb2c1;
+}
+
+.footer .copy-right {
+    font-size: 12px;
+    color: #888;
+}
+
+.footer .icon-box {
+    text-align: center;
+    margin: 50px  0 70px;
+}
+
+.footer .icon-box a {
+    color: #2b3f43;
+}
+
+.footer .svg {
+    width: 75px;
+    height: 70px;
+    fill: #6fc173;
+    margin: 0 20px;
+}
+
+.icon-box a:nth-child(3) .svg {
+    fill: #f8f7f2;
+}
+
+@media (max-width: 800px) {
+
+    .dis-none-md {
+        display: none;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .h-contents {
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .h1 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .video {
+        display: none;
+    }
+
+    .header .img {
+        position: relative;
+        min-width: 100%;
+        min-height: 580px;
+        width: auto;
+        height: 580px;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        zoom: 1.2;
+        z-index: -100;
+        background-size: cover;
+    }
+
+    .svg-box {
+        width: 100px;
+    }
+
+    .svg-box svg {
+        width: 100px;
+    }
+
+    .h-contents .contents-box {
+        justify-content: space-between;
+    }
+
+    .h-contents .h1 {
+        width: 200px;
+        margin: 50px auto 30px;
+    }
+
+    .h-contents p {
+        text-align: left;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .section {
+        padding: 0 40px;
+    }
+
+    #section1 {
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 0;
+    }
+    
+    #section1 .sec-container {
+        display: block;
+    }
+    
+    #section1 .sec-box {
+        width: 100%;
+    }
+
+    #section2 {
+        height: 850px;
+        padding: 0;
+    }
+    
+    #section2 .back-image {
+        height: 850px;
+        padding-top: 40px;
+    }
+    
+    #section2 h1 {
+        width: 100%;
+    }
+    
+    #section2 p {
+        width: 100%;
+        padding: 0 40px;
+    }
+    
+    #section3 {
+        margin-top: 0;
+        padding: 40px 40px 20px;
+    }
+    
+    
+    #section3 > p {
+        width: 100%;
+        margin: 0 auto 25px;
+    }
+    
+    #section3 .sec-container {
+        margin: 0 auto 30px;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    #section3 .sec-box {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    
+    #section3 .svg {
+        float: left;
+        margin-right: 20px;
+    }
+    
+    #section3 .text-box {
+        float: left;
+        width: calc(100% - 120px);
+        height: auto;
+    }
+    
+    #section3 .table-box {
+        width: 100%;
+    }
+
+    #section3 table {
+        width: 100%; 
+        display: inline;
+    }
+
+    #table2 th, #table2 td {
+        width: calc(100% / 7);
+        vertical-align: top;
+        font-size: 13px;
+    }    
+    
+    #section3 .setumei {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    #section3 .setumei .svg{
+        display: block;
+        margin: 0 auto 30px;
+        float: none;
+    }
+
+    #section3 .setumei-box{
+        width: 100%;
+        float: none;
+    }
+    
+    #section4 {
+        height: 280px;
+        width: 100%;
+        margin-top: 70px;
+        padding: 0;
+    }
+    
+    #section4 .back-image {
+        height: 280px;
+    }
+    
+    #section4 h1 {
+        width: 300px;
+   }
+    
+    #section4 p {
+        width: 100%;
+    }
+
+    #section4 .btn-box {
+        margin: 0 40px;
+    }
+    
+    #section5 .h1 {
+        margin-bottom: 30px;
+    }
+    
+    #section5 .sec-container {
+        width: 100%;
+        margin: 0 auto 40px;
+        display: block;
+    }
+    
+    #section5 .img-box {
+        width: 150px;
+        height: 150px;
+    }
+    
+    #section5 .img {
+        height: 150px;
+    }
+    
+    .name {
+        margin-bottom: 20px;
+    }
+    
+    #section5 .text-box {
+        width: 100%;
+    }
+    
+    #section5 .text-box::before{
+        display: none;
+    }
+    
+    #section6 .sec-container {
+        width: 100%;
+        display: block;
+    }
+    
+    #section6 .sec-box {
+        margin: 0 10px;
+    }
+    
+    #section6 .img {
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    
+    #section6 .name {
+        height: auto;
+    }
+    
+    #section7 {
+        margin-top: 40px;
+    }
+    
+    #section7 .h1 {
+    }
+    
+    #section7 .sec-container {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    #section7 .sec-box {
+        width: 100%;
+        height: 92px;
+        display: block;
+        margin-bottom: 25px;
+    }
+    
+    .num {
+        float: left;
+        margin-right: 10px;
+    }
+    
+    #section7 .text-box {
+        float: left;
+        width: calc(100% - 58px);
+        height: auto;
+    }
+    
+    #section7 .small {
+        width: 100%;
+        margin: 70px auto 0;
+    }
+    
+    #section8 {
+        padding: 0;
+        height: 240px;
+    }
+
+    #section8 .h1{
+    width: 100%;
+    }
+
+    #section8 .btn-box {
+        margin: 0 40px;
+    }
+    
+    #section9 .h1 {
+        width: 100%;
+    }
+    
+    #section9 .audio {
+        width: 100%;
+    }
+    
+    #section9 .text-box {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    
+    #section10 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    #section10 .h1 {
+        margin: 0 auto 40px ;
+    }
+    
+    #section10 .sec-container {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    #section10 .sec-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    #section10 .small {
+        width: 100%;
+    }
+    
+    #section10 table {
+        width: 100%;
+    }
+    
+    #section11 {
+        margin-top: 50px;
+        padding-bottom: 20px;
+    }
+    
+    #section11 .text-box {
+        width: 100%;
+    }
+    
+    #section11 .text-box .h2 {
+        margin: 0;
+    }
+    
+    #section11 .text-box p {
+        margin: 0 0 25px;
+    }
+    
+    #section12 {
+        padding-top: 40px;
+    }
+    
+    #section12 p {
+        width: 100%;
+    }
+    
+    #section12 .form {
+        width: 100%;
+    }
+    
+    #section12 .form span {
+        text-align: left;
+    }
+    
+    #section12 .input-box {
+        position: relative;
+    }
+    
+    #section12 .input {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 25px;
+        padding: 7px 10px;
+    }
+    
+    #section12 .select {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 25px;
+        padding: 7px 10px;
+    }
+    
+    #section12 .input-box i {
+        right: 10px;
+    }
+    
+    #section12 .small {
+        width: 100%;
+    }
+    
+    #section12 .textarea {
+        width: 100%;
+    }
+    
+    .footer .f-container {
+        display: block;
+    }
+    
+    .footer .f-container a {
+        text-decoration: none;
+        display: block;
+        margin: 10px;
+        color: #5fb2c1;
+    }
+    
+    .footer .icon-box {
+        text-align: center;
+        margin: 40px 0 50px;
+    }
+
+    .footer .svg {
+        width: 50px;
+        height: 45px;
+        margin: 0 10px;
+    }
+}

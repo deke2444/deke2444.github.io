@@ -88,6 +88,10 @@ img {
     overflow: hidden;
 }
 
+.pagination {
+	display: none;
+}
+
 .pagination a {
     color: #fcfcfc;
     display: block;
@@ -130,14 +134,60 @@ img {
 	max-width: 100%;
 }
 
+#section1 {
+	height: auto;
+}
+
 #section1 .sec-container {
-    width: calc(100% - 82px);
-    display: flex;
+	width: calc(100% - 82px);
+	height: auto;
+	display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-	bottom: 60px;
+	align-items: flex-end;
 	flex-wrap: wrap;
-	padding: 40px ;
+	bottom: 0;
+	padding: 40px;
+}
+
+#section1 .text-box {
+	height: 300px;
+	margin-left: 30px;
+	margin-bottom: 40px;
+	padding-top: 30px;
+	padding-right: 20px;
+}
+
+#section1 .image-box {
+	border: 3px solid #222;
+	max-width: 100%;
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+	border-radius: 50%;
+	position: relative;
+	margin-left: auto;
+}
+
+#id1, #id2 {
+    width: 450px;
+    height: 300px;
+	background-size: cover;
+}
+
+#id1 {
+	position: absolute;
+}
+
+.fadeout{
+	opacity: 0;
+	transition: 3s ease-in-out;
+	-webkit-transition: 3s ease-in-out;
+}
+
+.fadein{
+	opacity: 1;
+	transition: 3s ease-in-out;
+	-webkit-transition: 3s ease-in-out;
 }
 
 .h1 {
@@ -209,44 +259,6 @@ img {
 
 .section .h3::first-letter {
 	font-size: 80px;
-}
-
-#section1 .text-box {
-	width: 360px;
-	margin-left: 30px;
-	margin-bottom: 10px;
-}
-
-#section1 .image-box {
-    border: 3px solid #222;
-    min-width: 500px;
-    height: 333px;
-    overflow: hidden;
-    margin-right: 30px;
-	border-radius: 50%;
-}
-
-#id1, #id2 {
-    width: 500px;
-    height: 333px;
-    border-radius: 50%;
-    background-size: cover;
-}
-
-#id1 {
-	position: absolute;
-}
-
-.fadeout{
-opacity: 0;
-transition: 3s ease-in-out;
--webkit-transition: 3s ease-in-out;
-
-}
-.fadein{
-opacity: 1;
-transition: 3s ease-in-out;
--webkit-transition: 3s ease-in-out;
 }
 
 #section2 {
@@ -353,19 +365,52 @@ transition: 3s ease-in-out;
 	margin-right: 10px;
 }
 
+#section3 {
+	height: auto;
+}
+
 #section3 .sec-container {
-	margin-top: 30px;
+	position: relative;
+	left: -1px;
 	width: 100%;
-	height: calc(100% - 191px);
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
+	height: auto;
+	display: grid;
+	grid-template:
+			"one two three" 50%
+			"four five six" 50%
+			/ calc((100% + 2px) / 3) calc((100% + 2px) / 3) calc((100% + 2px) / 3);
+	
+}
+
+#section3 .grid-1 {
+	grid-area: one;
+}
+
+#section3 .grid-2 {
+	grid-area: two;
+}
+
+#section3 .grid-3 {
+	grid-area: three;
+}
+
+#section3 .grid-4 {
+	grid-area: four;
+}
+
+#section3 .grid-5 {
+	grid-area: five;
+}
+
+#section3 .grid-6 {
+	grid-area: six;
 }
 
 #section3 .sec-item {
-	width: 30%;
 	text-align: center;
+	border: 1px solid #111;
+	padding: 40px 0 20px;
+	position: relative;
 }
 
 #section3 .sec-item i {
@@ -378,15 +423,92 @@ transition: 3s ease-in-out;
 	font-family: Impact, 'Arial Narrow Bold', sans-serif,sans-serif;
 }
 
+#section3 .sen1 {
+	position: absolute;
+	height: 2px;
+	width: 20%;
+	background-color: #111;
+	top: 16px;
+	left: 16px;
+}
+
+#section3 .sen2 {
+	position: absolute;
+	height: 2px;
+	width: 20%;
+	background-color: #111;
+	top: 16px;
+	right: 16px;
+}
+
+#section3 .sen3 {
+	position: absolute;
+	height: 2px;
+	width: 20%;
+	background-color: #111;
+	bottom: 16px;
+	left: 16px;
+}
+
+#section3 .sen4 {
+	position: absolute;
+	height: 2px;
+	width: 20%;
+	background-color: #111;
+	bottom: 16px;
+	right: 16px;
+}
+
+#section3 .sen5 {
+	position: absolute;
+	height: 30%;
+	width: 2px;
+	background-color: #111;
+	top: 16px;
+	left: 16px;
+}
+
+#section3 .sen6 {
+	position: absolute;
+	height: 30%;
+	width: 2px;
+	background-color: #111;
+	top: 16px;
+	right: 16px;
+}
+
+#section3 .sen7 {
+	position: absolute;
+	height: 30%;
+	width: 2px;
+	background-color: #111;
+	bottom: 16px;
+	left: 16px;
+}
+
+#section3 .sen8 {
+	position: absolute;
+	height: 30%;
+	width: 2px;
+	background-color: #111;
+	bottom: 16px;
+	right: 16px;
+}
+
+#section4 {
+	height: auto;
+}
+
 #section4 .sec-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-content: center;
+	padding: 30px;
 }
 
 #section4 .sec-item {
-	margin-top: 40px;
+	padding: 30px 10px;
 }
 
 #section4 .img {
@@ -434,8 +556,10 @@ transition: 3s ease-in-out;
 }
 
 #section4 .text-box {
-	background: #ccc;
-
+	padding: 2px;
+	border: 1px solid #ddd;
+	background-image: url("../images/pic.jpg");
+	background-size: cover;
 }
 
 .parent .front{
@@ -452,23 +576,34 @@ transition: 3s ease-in-out;
     transform:rotateY( 0deg );
 }
 
-
+#section5 {
+	height: auto;
+}
 
 #section5 .sec-container {
 	position: relative;
+	left: -1px;
 	width: 100%;
-	height: calc(100% - 158px);
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	display: grid;
+	grid-template:
+			"one two" 100% 
+			/ calc(50% + 1px) calc(50% + 1px);
+}
+
+#section5 .grid-1 {
+	grid-area: one;
+}
+
+#section5 .grid-2 {
+	grid-area: two;
 }
 
 #section5 .sec-item {
+	border: 1px solid #111;
 	position: relative;
-	width: calc(50% - 1px);
 	height: 100%;
 	text-align: center;
-	padding: 0 20px;
+	padding: 20px;
 	box-sizing: border-box;
 }
 
@@ -507,7 +642,7 @@ transition: 3s ease-in-out;
 #section5 .sen1 {
 	position: absolute;
 	height: 2px;
-	width: 100px;
+	width: 20%;
 	background-color: #111;
 	top: 16px;
 	left: 16px;
@@ -516,7 +651,7 @@ transition: 3s ease-in-out;
 #section5 .sen2 {
 	position: absolute;
 	height: 2px;
-	width: 100px;
+	width: 20%;
 	background-color: #111;
 	top: 16px;
 	right: 16px;
@@ -525,7 +660,7 @@ transition: 3s ease-in-out;
 #section5 .sen3 {
 	position: absolute;
 	height: 2px;
-	width: 100px;
+	width: 20%;
 	background-color: #111;
 	bottom: 16px;
 	left: 16px;
@@ -534,7 +669,7 @@ transition: 3s ease-in-out;
 #section5 .sen4 {
 	position: absolute;
 	height: 2px;
-	width: 100px;
+	width: 20%;
 	background-color: #111;
 	bottom: 16px;
 	right: 16px;
@@ -542,7 +677,7 @@ transition: 3s ease-in-out;
 
 #section5 .sen5 {
 	position: absolute;
-	height: 150px;
+	height: 30%;
 	width: 2px;
 	background-color: #111;
 	top: 16px;
@@ -551,7 +686,7 @@ transition: 3s ease-in-out;
 
 #section5 .sen6 {
 	position: absolute;
-	height: 150px;
+	height: 30%;
 	width: 2px;
 	background-color: #111;
 	top: 16px;
@@ -560,7 +695,7 @@ transition: 3s ease-in-out;
 
 #section5 .sen7 {
 	position: absolute;
-	height: 150px;
+	height: 30%;
 	width: 2px;
 	background-color: #111;
 	bottom: 16px;
@@ -569,14 +704,17 @@ transition: 3s ease-in-out;
 
 #section5 .sen8 {
 	position: absolute;
-	height: 150px;
+	height: 30%;
 	width: 2px;
 	background-color: #111;
 	bottom: 16px;
 	right: 16px;
 }
 
-
+#section6 {
+	height: auto;
+	padding-bottom: 120px;
+}
 
 #section6 .form {
 	width: 800px;
@@ -596,7 +734,7 @@ transition: 3s ease-in-out;
 }
 
 #section6 .sec-td {
-	width: 70%;
+	width: 60%;
 }
 
 #section6 .input {
@@ -653,5 +791,208 @@ transition: 3s ease-in-out;
 
 .input:focus, .textarea:focus, .btn:focus {
 	outline: 0;
+}
+
+@media (max-width: 1000px) {
+	#section1 .image-box {
+		border: 3px solid #222;
+		max-width: 100%;
+		width: 450px;
+		height: 300px;
+		overflow: hidden;
+		border-radius: 50%;
+		position: relative;
+		margin-left: auto;
+	}
+}
+
+@media (max-width: 860px) {
+	#section5 .sec-container {
+		grid-template:
+				"one"
+				"two"
+				/ calc(100% + 2px);
+	}
+
+	#section3 .sec-item i {
+		font-size: 100px;
+	}
 	
+	#section3 .sec-item p {
+		font-size: 24px;
+	}
+
+	#section6 .form {
+		width: 100%;
+		margin: 30px auto 0;
+		text-align: center;
+	}
+
+	#section6 table {
+		width: 100%;
+	}
+	
+	#section6 .sec-container {
+		width: 100%;
+		height: calc(100% - 130px);
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+	}
+	
+	#section6 .sec-th {
+		width: calc(100% - 40px);
+		margin: 0 20px;
+		box-sizing: border-box;
+	}
+	
+	#section6 .sec-td {
+		width: calc(100% - 40px);
+		margin: 0 20px;
+		box-sizing: border-box;
+	}
+	
+	#section6 .input {
+		width: calc(100% - 40px);
+		height: 26px;
+		margin-bottom: 25px;
+		padding: 7px 10px;
+		border-radius: 5px;
+		border: 1px solid #e5e5d1;
+		font-size: 1rem;
+		font-family: inherit;
+	}
+	
+	#section6 .textarea {
+		width: calc(100% - 40px);
+		height: 186px;
+		padding: 7px 10px;
+		border-radius: 5px;
+		border: 1px solid #e5e5d1;
+		background: #fff;
+		font-size: 1rem;
+	}
+	
+	.btn-box {
+		position: relative;
+		margin-top: 20px;
+	}
+	
+	.btn {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 24px;
+		padding: 10px 45px;
+		color: #911;
+		background: #910707;
+		border: none;
+		border-radius: 5px;
+		border-bottom: 3px solid #600000;
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+		vertical-align: bottom;
+		text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 600px) {
+	.smart-none {
+		display: none;
+	}
+
+	.section .h2 {
+		font-size: 60px;
+	}
+
+	.h1-box {
+		padding: 40px 0;
+	}
+
+	#section1 .sec-container {
+		padding: 10px;
+		justify-content: center;
+		width: calc(100% - 20px);
+	}
+
+	#section1 .h2 {
+		font-size:34px;
+		line-height: 1.4;
+		width: 250px;
+	}
+
+	#section1 .text-box {
+		height: 200px;
+		padding: 0;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	
+	#section2 .text {
+		width: 300px;
+		padding: 0;
+	}
+	
+	#section2 .h3-box {
+		position: relative;
+	}
+	
+	.h3-box .sen {
+		position: absolute;
+		width: 280px;
+		height: 2px;
+		background: #111;
+		left: 50px;
+		top: 18px;
+	}
+	
+	.h3-box .bold-sen {
+		position: absolute;
+		width: 285px;
+		height: 4px;
+		background: #111;
+		left: 45px;
+		top: 25px;
+	}
+
+	.h3-box .smart-br {
+		display: block;
+		text-align: right;
+	}
+	
+	#section2 .h3 {
+		margin: 10px 0;
+		letter-spacing: 3px;
+	}
+
+	#section3 .sec-container {
+		grid-template:
+				"one two" calc(100% / 3)
+				"three four" calc(100% / 3)
+				"five six" calc(100% / 3)
+				/ calc(50% + 2px) calc(50% + 2px);
+	}
+
+	#section4 .img {
+		width: 250px;
+		height: 180px;
+	}
+	
+	.parent div{
+		width:250px;
+		height:180px;
+		backface-visibility:hidden;
+		transition:all 1.5s ease;
+	}
+	
+
+	#section5 .h4 {
+		font-size: 30px;
+	}
+
+	#section6 .form p {
+		text-align: left;
+		padding: 0 30px;
+	}
 }

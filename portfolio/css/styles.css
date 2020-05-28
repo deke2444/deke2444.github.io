@@ -24,8 +24,8 @@ ul {
 
 h1,h2,h3,h4,h5 {
 	font-family: Impact, 'ヒラギノ角ゴ StdN';
-	-webkit-font-family: Impact, 'ヒラギノ角ゴ StdN';
-	font-style: ;
+	-webkit-font-family: 'ヒラギノ角ゴ StdN', Impact;
+	font-style: normal;
 }
 
 img {
@@ -903,7 +903,7 @@ img {
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 	.smart-none {
 		display: none;
 	}
@@ -1008,5 +1008,9 @@ img {
 	#section6 .form p {
 		text-align: left;
 		padding: 0 30px;
+	}
+
+	.btn {
+		font-size: 20px;
 	}
 }

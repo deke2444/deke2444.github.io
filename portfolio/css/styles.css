@@ -23,8 +23,9 @@ ul {
 }
 
 h1,h2,h3,h4,h5 {
-	font-family: Impact, 'ヒラギノ角ゴ StdN', 'Arial Narrow Bold', sans-serif,sans-serif;
-	-webkit-font-family: Impact, 'ヒラギノ角ゴ StdN', 'Arial Narrow Bold', sans-serif,sans-serif;
+	font-family: Impact, 'ヒラギノ角ゴ StdN';
+	-webkit-font-family: Impact, 'ヒラギノ角ゴ StdN';
+	font-style: ;
 }
 
 img {
@@ -529,14 +530,12 @@ img {
     width:300px;
     height:200px;
     backface-visibility:hidden;
-	transition:all 1.5s ease;
+	transition:all 1s ease;
 	z-index: 1;
 }
 
 #section4 .image-box {
 	position: relative;
-	padding: 2px;
-	border: 1px solid #ddd;
 	background-size: cover;
 	background-clip: content-box;
 	z-index: 10;
@@ -547,7 +546,7 @@ img {
 	display: block;
 	position: absolute;
 	top: -30px;
-	left: 30px;
+	left: 50px;
 	transform: rotate(175deg);
 }
 
@@ -556,14 +555,12 @@ img {
 	display: block;
 	position: absolute;
 	top: -30px;
-	left: 30px;
+	left: 50px;
 	transform: rotate(5deg);
 	z-index: -10;
 }
 
 #section4 .text-box {
-	padding: 2px;
-	border: 1px solid #ddd;
 	background-image: url("../images/pic.jpg");
 	background-size: cover;
 }
@@ -582,7 +579,7 @@ img {
 }
 .parent:hover .flipped{
 	transform:rotateY( 0deg );
-	-webkit-transform: rotateY( 0 );
+	-webkit-transform: rotateY( 0deg );
 }
 
 #section5 {
@@ -987,12 +984,20 @@ img {
 		width: 250px;
 		height: 180px;
 	}
+
+	#section4 .image-box:before {
+		left: 30px;
+	}
+	
+	#section4 .flipped:before {
+		left: 30px;
+	}
 	
 	.parent div{
 		width:250px;
 		height:180px;
 		backface-visibility:hidden;
-		transition:all 1.5s ease;
+		transition:all 1s ease;
 	}
 	
 

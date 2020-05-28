@@ -793,7 +793,7 @@ img {
 	outline: 0;
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 	#section1 .image-box {
 		border: 3px solid #222;
 		max-width: 100%;
@@ -806,7 +806,7 @@ img {
 	}
 }
 
-@media (max-width: 860px) {
+@media screen and (max-width: 860px) {
 	#section5 .sec-container {
 		grid-template:
 				"one"
@@ -897,7 +897,7 @@ img {
 	}
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 	.smart-none {
 		display: none;
 	}

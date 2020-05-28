@@ -426,7 +426,7 @@ img {
 #section3 .sec-item p {
 	font-size: 30px;
 	text-align: center;
-	font-family: Impact, 'ヒラギノ角ゴ StdN','Arial Narrow Bold', sans-serif,sans-serif;
+	font-family: 'Anton', sans-serif;
 }
 
 #section3 .sen1 {
@@ -549,6 +549,7 @@ img {
 	top: -30px;
 	left: 50px;
 	transform: rotate(175deg);
+	z-index: 10;
 }
 
 #section4 .flipped:before {
@@ -568,10 +569,12 @@ img {
 
 .parent .front{
 	z-index: 10;
+	backface-visibility: hidden;
 }
 .parent .flipped{
 	position: absolute;
 	top: 0;
+	backface-visibility: hidden;
 	transform:rotateY( 180deg );
 	-webkit-transform: rotateY( 180deg );
 }
@@ -623,7 +626,6 @@ img {
 #section5 .h4 {
 	width: 100%;
 	font-size: 40px;
-	font-family: Impact, 'ヒラギノ角ゴ StdN';
 	margin: 40px 0 0;
 }
 

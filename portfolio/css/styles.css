@@ -24,9 +24,7 @@ ul {
 }
 
 .h1,.h2,.h3,.h4,.h5 {
-	font-family: Impact, 'ヒラギノ角ゴ StdN';
-	-webkit-font-family: Impact, 'ヒラギノ角ゴ StdN';
-	font-style: ;
+	font-family: 'Anton', sans-serif;
 }
 
 img {
@@ -567,6 +565,7 @@ img {
 }
 
 .parent .front{
+	z-index: 10;
 }
 .parent .flipped{
 	position: absolute;

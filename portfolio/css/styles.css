@@ -3,7 +3,8 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #111111;
-    font-size: 16px;
+	font-size: 16px;
+	font-style: normal;
 	font-family: 'Arial Narrow Bold', sans-serif,sans-serif;
 	background: #eee url(../images/bg.png);
 }

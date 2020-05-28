@@ -23,6 +23,7 @@ ul {
 
 h1,h2,h3,h4,h5 {
 	font-family: Impact, 'ヒラギノ角ゴ StdN', 'Arial Narrow Bold', sans-serif,sans-serif;
+	-webkit-font-family: Impact, 'ヒラギノ角ゴ StdN', 'Arial Narrow Bold', sans-serif,sans-serif;
 }
 
 img {
@@ -42,9 +43,9 @@ img {
 .fullPageScroll {
     width: 100%;
     height: 100%;
-     scroll-snap-type: y mandatory; 
+    /* scroll-snap-type: y mandatory; */
     overflow-y: auto;
-     -webkit-overflow-scrolling: touch; 
+    /* -webkit-overflow-scrolling: touch; */
 }
 
 .bg-image {
@@ -160,9 +161,9 @@ img {
 #section1 .image-box {
 	border: 3px solid #222;
 	max-width: 100%;
-  width: 450px;
-  height: 300px;
-  overflow: hidden;
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
 	border-radius: 50%;
 	position: relative;
 	margin-left: auto;
@@ -172,7 +173,6 @@ img {
     width: 450px;
     height: 300px;
 	background-size: cover;
-	border-radius: 50%;
 }
 
 #id1 {
@@ -794,7 +794,7 @@ img {
 	outline: 0;
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
 	#section1 .image-box {
 		border: 3px solid #222;
 		max-width: 100%;
@@ -807,7 +807,7 @@ img {
 	}
 }
 
-@media screen and (max-width: 860px) {
+@media (max-width: 860px) {
 	#section5 .sec-container {
 		grid-template:
 				"one"
@@ -898,7 +898,7 @@ img {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
 	.smart-none {
 		display: none;
 	}

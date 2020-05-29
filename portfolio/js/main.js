@@ -134,4 +134,28 @@ function hyouji(){ //　一文字ずつ表示させる
         }
     }
 }
+
+// ハンバーガー
+
+function hambarger() {
+  let nav = document.getElementById('navArea');
+  let btn = document.querySelector(".toggle_btn");
+  let mask = document.getElementById('mask');
+  let open = 'open';
+
+  btn.addEventListener('click', function() {
+    if (nav.className != 'open') {
+      nav.classList.add(open);
+    } else {
+      nav.classList.remove(open);
+    }
+  });
+
+  mask.addEventListener('click', function() {
+    nav.classList.remove(open);
+  });
+}
+
+hambarger();
+
 }

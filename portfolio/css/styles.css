@@ -1048,6 +1048,7 @@ nav {
 	transition: .5s;
 	text-align: center;
 	z-index: 20;
+	-webkit-transform: translate3d(0,0,1px);
   }
 
   .open nav {

@@ -351,24 +351,24 @@
                     <div class="b-sen"></div>
                     <div class="b-bold-sen"></div>
                 </div>
-                <form accept="#" method="post" class="form">
+                <form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewaSrT_hK17xI1INHoCNeP14mZv8wdQnCA5NxiXfI6xye67w/formResponse">
                     <p>制作の依頼・ご相談などお気軽にお問い合わせくださいませ。<br>
                     下記のフォームよりわかる範囲でご記入ください。必須の項目は必ずご記入お願いします。</p>
                     <table>
                         <tr class="sec-container">
-                            <th class="sec-th">お名前※</th>
-                            <td class="sec-td"><input type="name" name="お名前" class="input"></td>
+                            <th class="sec-th"><label for="email">メールアドレス※</label></th>
+                            <td class="sec-td"><input id="email" type="text" name="emailAddress" class="input" placeholder="example@mail.co.jp" required></td>
                         </tr>
                         <tr class="sec-container">
-                            <th class="sec-th">メールアドレス※</th>
-                            <td class="sec-td"><input type="email" name="メールアドレス" class="input"></td>
+                            <th class="sec-th"><label for="name">お名前※</label></th>
+                            <td class="sec-td"><input id="name" type="text" name="entry.276964379" class="input" placeholder="お名前　太郎" required></td>
                         </tr>
                         <tr class="sec-container">
-                            <th class="sec-th">お問い合わせ詳細※</th>
-                            <td class="sec-td"><textarea name="お問合わせ詳細" id="" cols="30" rows="10" class="textarea"></textarea></td>
+                            <th class="sec-th"><label for="msg">お問い合わせ詳細※</label></th>
+                            <td class="sec-td"><textarea name="entry.1629193298" id="msg" cols="30" rows="10" class="textarea" placeholder="お気軽にお問い合わせください。" required></textarea></td>
                         </tr>
                     </table>
-                    <div class="btn-box"><button class="btn">上記の内容で送信</button></div>
+                    <div class="btn-box"><button class="btn" type="submit" name="button">上記の内容で送信</button></div>
                 </form>
             </section>
             <footer class="footer">

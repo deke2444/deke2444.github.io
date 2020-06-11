@@ -506,19 +506,6 @@ img {
 	height: 200px;
 }
 
-.parent{
-	position:relative;
-	width: auto;
-}
-
-.parent div{
-    width:300px;
-    height:200px;
-    backface-visibility:hidden;
-	transition:all 1s ease;
-	z-index: 1;
-}
-
 #section4 .image-box {
 	position: relative;
 	background-size: cover;
@@ -536,56 +523,77 @@ img {
 	z-index: 10;
 }
 
-#section4 .flipped:before {
-	content: url("../images/te-p.png");
-	display: block;
-	position: absolute;
-	top: -30px;
-	left: 50px;
-	transform: rotate(12deg);
-	z-index: -10;
+#section4 .h4 {
+	font-family: 'Arial Narrow Bold', sans-serif,sans-serif;
 }
 
-#section4 .text-box {
-	background-image: url("../images/pic.jpg");
-	background-size: cover;
+#section4 button {
+	border: none;
 }
 
-#section4 .text-box .h5 {
-	font-size: 16px;
-	margin: 0;
-	padding: 20px;
+#section4 button:focus {
+	outline: 0;
 }
 
-#section4 .text-box p {
-	margin: 0;
-	padding: 20px;
-}
-
-#section4 .text-box a {
-	margin: 0;
-	padding: 20px;
-}
-
-.parent .front{
-	z-index: 10;
-	backface-visibility: hidden;
-}
-.parent .flipped{
-	position: absolute;
+.popup {
+	position: fixed;
+	left: 0;
 	top: 0;
-	backface-visibility: hidden;
-	transform:rotateY( 180deg );
-	-webkit-transform: rotateY( 180deg );
-}
-.parent:hover .front{
-	transform:rotateY( 180deg );
-	-webkit-transform: rotateY( 180deg );
-}
-.parent:hover .flipped{
-	transform:rotateY( 0deg );
-	-webkit-transform: rotateY( 0deg );
-}
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	opacity: 0;
+	visibility: hidden;
+	transition: .6s;
+  }
+  .popup.is-show {
+	opacity: 1;
+	visibility: visible;
+  }
+  .popup-inner {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+	height: 60%;
+	overflow: scroll;
+	max-width: 600px;
+	padding: 50px;
+	background-color: #fff;
+	z-index: 2;
+  }
+
+  .close-btn {
+	position: sticky;
+	right: 0;
+	top: 0;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	margin-left: auto;
+  }
+  .close-btn i {
+	font-size: 20px;
+	color: #333;
+  }
+  .black-background {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+	z-index: 1;
+	cursor: pointer;
+  }
+
+  .img-kaku {
+	  width: 100%;
+	  height: auto;
+  }
 
 #section5 {
 	height: auto;

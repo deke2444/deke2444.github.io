@@ -681,6 +681,7 @@ img {
     }
 
     #section4 .form-table {
+        width: 100%;
         margin: 0;
         padding: 0 30px;
         box-sizing: border-box;

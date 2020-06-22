@@ -277,12 +277,12 @@ textarea {
 #section3 .image-group {
     display: flex;
     justify-content: center;
+        align-items: flex-start;
 }
 
 #section3 .image-group img {
     width: 250px;
     height: auto;
-    align-items: flex-start;
     display: block;
     margin: 40px 20px 0;
 }

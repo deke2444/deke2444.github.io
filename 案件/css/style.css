@@ -36,6 +36,11 @@ img {
 	vertical-align: middle;
 }
 
+textarea {
+    overflow: auto;
+}
+
+
 .PC {
     display: inline;
 }

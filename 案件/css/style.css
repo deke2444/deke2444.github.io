@@ -324,6 +324,14 @@ textarea {
     flex-direction: column;
 }
 
+#section4 .sec-th {
+    display: block;
+}
+
+#section4 .sec-td {
+    display: block;
+}
+
 #section4 .input-box {
     position: relative;
 }
